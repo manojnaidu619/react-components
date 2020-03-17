@@ -1,11 +1,10 @@
 import React from 'react'
-import faker from 'faker'
 
 const CommentDetail = (props) => {
     return (
         <div class="comment">
         <a class="avatar">
-            <img src={faker.image.avatar()}/>
+            <img src={props.avatar}/>
         </a>
             <div class="content">
                 <a class="author">{props.author}</a>
